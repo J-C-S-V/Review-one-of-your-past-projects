@@ -1,0 +1,112 @@
+body {
+  color: #f3f3f3;
+  font-size: 25px;
+
+  background-image: linear-gradient(
+      rgba(136, 136, 206, 0.7),
+      rgba(58, 58, 158, 0.8)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+}
+
+h1,
+#description {
+  margin: 20%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+#description {
+  font-style: italic;
+}
+
+form {
+  margin: 10%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 7%;
+  background-color: rgba(13, 13, 144, 0.5);
+}
+
+label {
+  position: relative;
+  display: flex;
+  margin: 10%;
+  margin-left: 0;
+  margin-top: 40px;
+}
+
+@media (min-width: 800px) {
+  form {
+    padding: 5.5rem;
+    margin: 27%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+input[type='radio'] {
+  position: absolute;
+  left: 140px;
+  top: 5px;
+}
+
+input {
+  position: absolute;
+  top: 35px;
+}
+
+#name-label {
+  margin-top: 0;
+}
+
+.questions_2 {
+  width: 100%;
+  padding: 6px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+  padding: 6px;
+  border: none;
+}
+
+.button:hover {
+  background-color: #1f4c21;
+}
+
+.input-checkbox[type='checkbox'] {
+  position: absolute;
+  left: 280px;
+  top: 2px;
+}
+
+#labels-checkboxes > label {
+  margin: 5px;
+}
+
+.questions {
+  position: relative;
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+
+.form {
+  width: 27rem;
+  margin: 0 auto;
+}
+
+.text-area {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.text-area-tag {
+  resize: vertical;
+}
