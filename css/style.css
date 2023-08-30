@@ -46,7 +46,7 @@ label {
   }
 }
 
-input[type="radio"] {
+input[type='radio'] {
   position: absolute;
   left: 140px;
   top: 5px;
@@ -66,29 +66,47 @@ input {
   padding: 6px;
 }
 
-button {
+.button {
   display: flex;
+  justify-content: center;
   margin-top: 2%;
   color: white;
   background-color: green;
   cursor: pointer;
-  justify-content: center;
+  padding: 6px;
+  border: none;
 }
 
-/* --------------- */
-
-#first-dropdown {
-  position: relative;
-  margin-top: 25%;
-  margin-bottom: 5%;
+.button:hover {
+  background-color: #1f4c21;
 }
 
-.input-checkbox[type="checkbox"] {
+.input-checkbox[type='checkbox'] {
   position: absolute;
   left: 280px;
   top: 2px;
 }
 
 #labels-checkboxes > label {
-  margin: 2%;
+  margin: 5px;
+}
+
+.questions {
+  position: relative;
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+
+.form {
+  width: 27rem;
+  margin: 0 auto;
+}
+
+.text-area {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.text-area-tag {
+  resize: vertical;
 }

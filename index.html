@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Survey Form</title>
     <meta charset="UTF-8" />
     <!-- This (metadata) is used for search engines -->
     <meta name="keywords" content="HTML, CSS, JavaScript, form" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Survey Form</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
     <script
       src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
       defer
@@ -17,95 +17,85 @@
   </head>
 
   <body>
-    <div>
+    <header>
       <h1 id="title">freeCodeCamp Survey Form</h1>
       <p id="description">
         Thank you for taking the time to help us improve the platform
       </p>
-    </div>
+    </header>
 
-    <form id="survey-form">
-      <div>
-        <label for="name" id="name-label" class="questions"
-          >Name
-          <input
-            class="questions_2"
-            id="name"
-            type="text"
-            placeholder="Enter you name"
-            required
-          />
-        </label>
-      </div>
-      <div>
-        <label for="email" id="email-label" class="questions"
-          >Email
-          <input
-            class="questions_2"
-            id="email"
-            type="email"
-            placeholder="Enter you email"
-            required
-          />
-        </label>
-      </div>
+    <form id="survey-form" class="form">
+      <label for="name" id="name-label" class="questions"
+        >Name
+        <input
+          class="questions_2"
+          id="name"
+          type="text"
+          placeholder="Enter you name"
+          required=""
+        />
+      </label>
+      <label for="email" id="email-label" class="questions"
+        >Email
+        <input
+          class="questions_2"
+          id="email"
+          type="email"
+          placeholder="Enter you email"
+          required=""
+        />
+      </label>
 
-      <div>
-        <label for="age" id="number-label" class="questions"
-          >Age
-          <input
-            id="number"
-            class="questions_2"
-            type="number"
-            placeholder="Age"
-            min="10"
-            max="99"
-            required
-          />
-        </label>
-      </div>
+      <label for="number" id="number-label" class="questions"
+        >Age
+        <input
+          id="number"
+          class="questions_2"
+          type="number"
+          placeholder="Enter your age"
+          min="10"
+          max="99"
+          required=""
+        />
+      </label>
 
-      <label id="first-dropdown" class="questions"
+      <label id="dropdown" class="questions"
         >Which option best describes your current role?</label
       >
       <select id="dropdown" class="questions_2">
-        <option disabled selected value="">Select current role</option>
-        <option value="">Student</option>
-        <option value="">Full time job</option>
-        <option value="">Full time learner</option>
+        <option disabled="" selected="" value="Select current role">
+          Select current role
+        </option>
+        <option value="Student">Student</option>
+        <option value="Full time job">Full time job</option>
+        <option value="Full time learner">Full time learner</option>
       </select>
 
       <label class="questions"
         >Would you recommend freeCodeCamp to a friend?</label
       >
       <section id="radio-buttons">
-        <div>
-          <label class="label-radio" for="option_1">
-            Definitely
-            <input type="radio" id="taste_1" name="option" value="Definitely" />
-          </label>
-        </div>
-        <div>
-          <label class="label-radio" for="option_2"
-            >Maybe
-            <input type="radio" id="taste_2" name="option" value="Maybe" />
-          </label>
-        </div>
-        <div>
-          <label class="label-radio" for="option_3"
-            >Not Sure
-            <input type="radio" id="taste_2" name="option" value="Not Sure" />
-          </label>
-        </div>
+        <label class="label-radio" for="taste_1">
+          Definitely
+          <input type="radio" id="taste_1" name="option" value="Definitely" />
+        </label>
+        <label class="label-radio" for="taste_2"
+          >Maybe
+          <input type="radio" id="taste_2" name="option" value="Maybe" />
+        </label>
+        <label class="label-radio" for="taste_3"
+          >Not Sure
+          <input type="radio" id="taste_3" name="option" value="Not Sure" />
+        </label>
       </section>
-      <label>What is your favorite feature of freeCodeCamp?</label>
 
+      <label>What is your favorite feature of freeCodeCamp?</label>
       <select class="questions_2">
-        <option disabled selected value="">Select an option</option>
-        <option value="">Challenges</option>
-        <option value="">Projects</option>
-        <option value="">Community</option>
-        <option value="">Open Source</option>
+        <option disabled="" selected="" value="">Select an option</option>
+        <option value="Challenges">Challenges</option>
+        <option value="Projects">Projects</option>
+        <option value="Community">Community</option>
+        <option value="Open Source">Open Source</option>
       </select>
 
       <label class="questions"
@@ -220,14 +210,24 @@
           />Additional Courses</label
         >
       </div>
-      <label class="questions">Any comments or suggestions?</label>
 
-      <textarea
-        cols="45"
-        rows="10"
-        placeholder="Enter your comment here..."
-      ></textarea>
-      <button class="questions_2" type="submit" id="submit">Submit</button>
+      <label class="questions">Any comments or suggestions?</label>
+      <div class="text-area">
+        <textarea
+          class="text-area-tag"
+          cols="45"
+          rows="10"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+      <button
+        class="questions_2 button"
+        type="submit"
+        id="submit"
+        style="width: 6rem; margin: auto"
+      >
+        Submit
+      </button>
     </form>
   </body>
 </html>
